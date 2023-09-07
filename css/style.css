@@ -1,0 +1,545 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* .mynavbar {
+    
+    height: 120px;
+}
+
+
+.mynavbar li a:hover {
+    color: goldenrod;
+    background-color: lightgray;
+}
+
+
+
+
+
+nav a img {
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 10vw;
+}
+
+
+
+.PRODUCT {
+    display: none;
+    position: absolute;
+    font-size: 0.8rem;
+}
+
+.SINGLE-POST {
+    display: none;
+    position: absolute;
+    font-size: 0.8rem;
+}
+
+.ABOUT:hover .PRODUCT {
+    display: block;
+}
+
+.BLOG:hover .SINGLE-POST {
+    display: block;
+} */
+
+
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    width: 100%;
+    padding: 20px 0px;
+  
+    background-color: white;
+  }
+  
+  .navbar .first-ul {
+    position: absolute;
+    left: 20vw;
+  }
+  
+  .navbar .first-ul li {
+    display: inline-block;
+    padding: 0px 10px;
+  }
+  
+  .navbar .first-ul .about .about-ul {
+    position: absolute;
+    top: 25px;
+    border-top: 3px solid blue;
+    background-color: white;
+    padding: 0px;
+  
+    display: none;
+  }
+  .navbar .first-ul .about:hover .about-ul {
+    display: block;
+  }
+  
+  
+  
+ 
+  
+  .navbar .first-ul .blog .blog-ul {
+    position: absolute;
+    top: 25px;
+    border-top: 3px solid blue;
+    background-color: white;
+    padding: 0px;
+  
+    display: none;
+  }
+  .navbar .first-ul .blog:hover .blog-ul {
+    display: block;
+  }
+  
+  .navbar .first-ul .blog ul li {
+    display: block;
+    padding: 10px;
+  }
+  
+  .navbar .first-ul li a:link {
+  
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  .navbar .first-ul li a:visited {
+    color: black;
+  }
+  
+  .navbar .first-ul li a:hover {
+    color: blue;
+  }
+  
+  
+  .navbar .icndiv i {
+    padding: 10px 12px;
+    margin-left: 10px;
+    border: 1px solid rgb(224, 221, 221);
+    border-radius: 50%;
+  
+    position: relative;
+  
+  }
+  
+  .navbar .icndiv a:link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar .icndiv a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navbar .icndiv i:hover {
+    transform: rotateY(180deg);
+    transition: 0.5s;
+  }
+  
+  .navbar .icndiv .bagicn {
+  
+    padding: 10px 19px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: blueviolet;
+    color: white;
+  }
+  
+  .navbar .icndiv .search-icn:hover {
+    transform: none;
+  }
+  
+  .navbar .icndiv .bagicn:hover {
+    transform: none;
+  }
+  
+  .navbar .icndiv .menu-bar {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  
+   
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .navbar .menu-bar .second-ul {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: gray;
+    padding: 10px;
+    list-style: none;
+  
+  
+  }
+  
+  
+  
+  
+  /* .navbar .menu-bar:hover .second-ul{display: block;} */
+  
+  
+  
+  
+  .navbar .menu-bar .second-ul li {
+    border-radius: 10px;
+  }
+  
+  .navbar .menu-bar .second-ul li a:visited {
+    color: white;
+  }
+  
+  .navbar .menu-bar .second-ul li a:link {
+    color: white;
+  }
+  
+  .navbar .menu-bar .second-ul li:hover {
+    background-color: gainsboro;
+    transition: 0.5s;
+  
+  }
+  
+  .navbar .menu-bar .second-ul li:hover a {
+    color: black;
+  }
+  
+
+  
+  .navbar .menu-bar .second-ul .blog-ul li:hover {
+    background-color: gray;
+  }
+
+  .navbar .menu-bar .second-ul .about-ul {
+    padding: 10px;
+    list-style: none;
+    display: none;
+  }
+  .navbar .menu-bar .second-ul .about:hover .about-ul {
+    display: block;
+  }
+  
+  .navbar .menu-bar .second-ul .blog-ul {
+    padding: 10px;
+    list-style: none;
+    display: none;
+  }
+  .navbar .menu-bar .second-ul .blog:hover .blog-ul {
+    display: block;
+  }
+  
+  
+  @media screen and (max-width:970px) {
+  
+    .navbar .icndiv {
+      /* width: 100%; */
+  
+    }
+  
+  
+  
+    .navbar .icndiv .menu-bar {
+     /* float: right; */
+      /* display: inline-block; */
+      display: block;
+  
+      
+  
+    }
+  
+    .navbar .first-ul {
+      display: none;
+    }
+  
+  
+   
+  
+    
+  
+     .icndiv .second-ul .close-icn {
+     
+     border: none;
+      z-index: 10;
+      float: right;
+      margin-top:-5px;
+      color: white;
+      font-size: 1.5rem;
+      
+    }
+  
+  
+    
+  
+    .navbar .menu-bar .second-ul {
+      /* visibility: hidden; */
+      /* transform: translateX(120%);*/
+      display: none;
+  
+  z-index: 2;
+  
+    }
+    
+    .dblock {
+      display: block;
+      /* visibility: visible; */
+      /* transform: translateX(0%); */
+      /* transition: 1s; */
+    
+    }
+  
+  }
+
+
+
+
+/* ---------------------------------box1-------------------------------------- */
+
+.box1 {
+   
+    height: 50vw;
+   
+    background-image: url(../images/bg-home.jpg);
+
+
+    background-size: contain;
+    background-position: center;
+
+
+}
+
+.box1 img {
+    position: absolute;
+    top: 500px;
+    right: 320px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.box1 h1 {
+    position: absolute;
+    top: 550px;
+    right: 330px;
+    /* border: 2px solid red; */
+    width: 110px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px){
+    .box1 img {
+        position: absolute;
+       
+        top: 200px;
+        right: 320px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .box1 h1 {
+        position: absolute;
+        top: 250px;
+        right: 330px;
+        /* border: 2px solid red; */
+        width: 110px;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+    
+}
+
+@media (min-width:501px) and (max-width:1000px){
+    .box1 img {
+        position: absolute;
+       
+        top: 200px;
+        right: 320px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .box1 h1 {
+        position: absolute;
+        top: 250px;
+        right: 330px;
+        /* border: 2px solid red; */
+        width: 110px;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+    
+}
+
+
+/* -------------------------------------box2----------------------------------- */
+.box2 {
+    display: flex;
+    background-color: rgb(236, 234, 229);
+
+}
+
+.box2 .leftbox {
+    width: 60%;
+    padding-left: 150px;
+    padding-top: 50px;
+    /* border: 2px solid red; */
+}
+
+.box2 .leftbox h4 {
+    color: sienna;
+}
+
+.box2 .leftbox h2 {
+    color: rgb(250, 29, 29);
+}
+
+.box2 .leftbox p {
+    color: sienna;
+}
+
+
+/* -------------------------------------box3----------------------------------- */
+.box3 {
+
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.box3 ul {
+    display: flex;
+}
+
+.box3 ul li {
+    text-align: center;
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    list-style: none;
+
+}
+
+.box3 ul .li1 {
+    padding-left: 0px;
+}
+
+.box3 i {
+
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
+
+.box3 a:link {
+    color: white;
+}
+
+.box3 a:visited {
+    color: white;
+}
+
+
+/* -------------------------------------about-box5----------------------------------- */
+
+.box5 {
+    height: 240px;
+    background-image: url(../images/bg-header-about.jpg);
+    background-position: center;
+}
+
+/* -------------------------------------about-box6----------------------------------- */
+
+.box6 .leftbox p {
+    line-height: 50px;
+    /* margin-top: 50px; */
+}
+
+/*--------------------------------------box8----------------------------------------*/
+.box8 .imgbox {
+    text-align: center;
+}
+
+.box8 .imgbox img {
+    padding: 50px 0px 50px 0px;
+}
+
+.box8 button:hover {
+    background-color: gold;
+}
+
+/*--------------------------------------box9----------------------------------------*/
+.box9 {
+    background-image: url(../images/map.jpg);
+    height: 270px;
+    display: flex;
+    align-items: center;
+
+}
+
+.box9in {
+    /* position: relative;
+    margin: auto; */
+
+    background-color: rgba(236, 234, 229,0.9);
+    
+}
+/*--------------------------------------box10----------------------------------------*/
+
+.box10 input{height:40px; margin-top: 10px; width:100%;}
+.box10 textarea{margin-top:10px ; width:100%; resize: none;}
+.box10 form button:hover{background-color: goldenrod;}
+
+.box10 .box-right h4{padding-top: 30px;}
+.box10 .box-right p{font-size: 1rem; padding-top: 20px; padding-bottom: 50px;}
+
+/*------------------------------------box11-------------------------------------*/
+
+.box11 .imgbox img{ width:50vw;}
+
+
+/* -------------------------------------footer----------------------------------- */
+.footer {
+    /* background-color: rgb(255, 36, 83); */
+    height: 170px;
+    text-align: center;
+    color: white;
+
+}
+
+.footer h2 {
+    padding-top: 40px;
+
+}
+
+.footer i {
+    padding: 10px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: white;
+    padding-top: 10px;
+}
